@@ -1,0 +1,27 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  /* text-align: center; */
+}
+.app-container{
+    display: flex;
+    gap: 40px;             
+    padding: 30px;
+    align-items: flex-start;
+}
+
+.Note {
+    width: 320px;
+}
+
+.NotesList{
+    flex: 1;               
+}
+
+
+
+
+
+
+

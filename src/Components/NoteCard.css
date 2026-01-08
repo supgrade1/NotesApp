@@ -1,0 +1,25 @@
+.note-card{
+    margin:0 10px;
+}
+
+.note-header h3{
+display:inline-block;
+}
+
+.note-header span{
+    display:inline-block;
+    margin-left:310px;
+    width:10px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.note-header p{
+    margin-top:0;
+}
+
+.note-card p{
+    background-color: rgb(213, 226, 34);
+}
+

@@ -1,0 +1,74 @@
+
+.Note{
+    height:60vh;
+    width:45vh;
+    background-color: rgba(18, 214, 229, 1);
+    border:2px solid whitesmoke;
+}
+.inputNote{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-bottom:0.3rem;
+}
+hr{
+    margin: 0 20px;
+    margin-top:0.3rem
+}
+
+li{
+    list-style: square inside;
+}
+
+li::marker{
+    color:blue;
+}
+
+input{
+    height:50px;
+    width: 240px;
+    align-items: start;
+}
+
+.inputForm{
+    margin-left:25px;
+    align-items: start;
+}
+
+h4{
+    display:flex;
+    justify-content: flex-start;
+    margin-bottom:0.3rem;
+}
+
+#Description{
+    height:70px;
+    width:240px;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.btn button{
+    border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.error {
+    font-weight: 500;
+    font-size: 17px;
+    color: #c90505;
+    /* font-size: 0.9rem; */
+    margin-top: 5px;
+}
