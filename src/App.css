@@ -19,7 +19,23 @@
     flex: 1;               
 }
 
+.loading {
+  color: #aaa;
+  font-style: italic;
+  text-align: center;
+  margin-top: 20px;
+}
 
+.empty-state {
+  color: #bbb;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+}
 
 
 

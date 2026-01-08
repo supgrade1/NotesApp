@@ -22,7 +22,6 @@ function Note({onAddNote}){
         });
 
         setError("");
-        alert("form Submitted Successfully");
         setTitle("");
         setDescription("");
     };

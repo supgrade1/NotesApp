@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import NotesList from './Components/NotesList.jsx';
 import Note from './Components/Note.jsx'
@@ -6,6 +6,13 @@ import Note from './Components/Note.jsx'
 function App() {
 
     const [notes,setNotes]=useState([]);
+    const [loading,setLoading]=useState(true);
+
+    useEffect(()=>{
+      setTimeout(()=>{
+        setLoading(false);
+      },1500)
+    },[])
 
     const addNote=(note)=>{
       setNotes((prevNotes)=>[...prevNotes,note])
@@ -19,8 +26,16 @@ function App() {
    <>
    <div className="app-container">
     <Note onAddNote={addNote}></Note>
+
+    {loading && <p className="loading">Loading notes...</p>}
+
+     {!loading && notes.length === 0 && (
+                <p className="empty-state">
+                    No notes available. Add your first note.
+                </p>
+            )}
       
-    {notes.length>0&& <NotesList notes={notes} onDelete={deleteNote}></NotesList>}
+    {!loading && notes.length>0&&( <NotesList notes={notes} onDelete={deleteNote}></NotesList>)}
    </div>
    </>
   )
