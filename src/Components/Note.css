@@ -5,6 +5,10 @@
     background-color: rgba(18, 214, 229, 1);
     border:2px solid whitesmoke;
 }
+
+form{
+    margin-right:30px
+}
 .inputNote{
     display: flex;
     justify-content: space-between;

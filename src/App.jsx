@@ -15,6 +15,7 @@ function App() {
     },[])
 
     const addNote=(note)=>{
+      console.log("Adding note:", note);
       setNotes((prevNotes)=>[...prevNotes,note])
     };
 
